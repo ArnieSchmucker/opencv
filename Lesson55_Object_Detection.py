@@ -40,7 +40,7 @@ myDetector = f.set_up_detectors()
 while True:    
     frame = f.buildFrame()
     f.frameSpeed(frame)
-    myImage = f.detectImage(frame,myDetector)
+    f.detectImage(frame,myDetector)
     cv2.imshow("Camera", frame)
     if cv2.waitKey(1)==ord('q'):
         break
